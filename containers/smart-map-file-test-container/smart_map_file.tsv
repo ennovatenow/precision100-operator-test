@@ -1,3 +1,4 @@
 Column_Name	Data Type	Max Length	Mapping Code	Mapping Value	Justification	Mandatory	Info1	Info2	Info3
 NAME	VARCHAR2	255	PASSTHRU	UPPER(NAME)	LEFT	Y	Additional Name Info 1	Additional Name Info 2	Additional Name Info 3
 CURRENCY	VARCHAR2	30	PASSTHRU	UPPER(CURRENCY)	RIGHT	Y	Additional Currency Info 1	Additional Currency Info 2	Additional Currency Info 3
+			__JOIN__	from dual					
