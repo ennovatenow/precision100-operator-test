@@ -1,7 +1,14 @@
 Column_Name	Data Type	Max Length	Mapping Code	Mapping Value	Justification	Mandatory	Info1	Info2	Info3
+ID	VARCHAR2	10		ID		Y			
 NAME	VARCHAR2	255	PASSTHRU	UPPER(NAME)	LEFT	Y	Additional Name Info 1	Additional Name Info 2	Additional Name Info 3
-STATE	VARCHAR2	30	PASSTHRU	UPPER(STATE)	RIGHT	Y	Additional Currency Info 1	Additional Currency Info 2	Additional Currency Info 3
-			__JOIN__	from name_list
-			__UNION__	
+STATE	VARCHAR2	30	DEFAULT	"OH"	RIGHT	Y	Additional Currency Info 1	Additional Currency Info 2	Additional Currency Info 3
+GENDER	VARCHAR2	30	MAP	GENDER_TYPE,GENDER	LEFT				
+DESCRIPTION	VARCHAR2	255	BINARY_MAP	DESC_TYPE,GENDER,YEAR					
+			__JOIN__	from name_list					
+			__UNION__						
+ID	VARCHAR2	10		ID		Y			
 NAME	VARCHAR2	255	PASSTHRU	UPPER(NAME)	LEFT	Y	Additional Name Info 1	Additional Name Info 2	Additional Name Info 3
-STATE	VARCHAR2	30	PASSTHRU	UPPER(STATE)	RIGHT	Y	Additional Currency Info 1	Additional Currency Info 2	Additional Currency Info 3
+STATE	VARCHAR2	30	DEFAULT	"OH"	RIGHT	Y	Additional Currency Info 1	Additional Currency Info 2	Additional Currency Info 3
+GENDER	VARCHAR2	30	MAP	GENDER_TYPE,GENDER	LEFT				
+DESCRIPTION	VARCHAR2	255	BINARY_MAP	DESC_TYPE,GENDER,YEAR					
+			__JOIN__	from name_list					
